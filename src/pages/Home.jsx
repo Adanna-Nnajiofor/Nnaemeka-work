@@ -10,7 +10,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Hero Section */}
-      <div className="w-full my-6 lg:flex lg:justify-between mt-32 mb-14 lg:items-center animate-slideInLeft">
+      <div className="w-full my-6 lg:flex lg:justify-between mt-28 mb-8 lg:items-center animate-slideInLeft">
         <div className="w-full p-8 lg:w-1/2">
           <h2 className="text-2xl">HI THERE!</h2>
           <h1 className="text-4xl py-6 font-extrabold">

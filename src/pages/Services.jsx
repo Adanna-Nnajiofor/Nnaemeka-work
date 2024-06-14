@@ -9,7 +9,7 @@ import writingImage from "../assets/images/writing image.jpg";
 const Services = () => {
   return (
     <section className="bg-gradient-to-r from-blue-200 to-blue-100 p-8 min-h-screen flex flex-col items-center animate-fadeIn">
-      <h2 className="mt-32 text-4xl font-bold text-center mb-8 text-blue-800 animate-fadeIn lg:text-5xl">
+      <h2 className="mt-28 text-4xl font-bold text-center mb-8 text-blue-800 animate-fadeIn lg:text-5xl">
         Services
       </h2>
       <p className="text-xl mb-10 text-gray-700 text-center max-w-2xl animate-fadeIn">

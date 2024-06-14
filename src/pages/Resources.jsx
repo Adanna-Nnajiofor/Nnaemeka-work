@@ -7,7 +7,7 @@ import formsImage from "../assets/images/forms image.jpg";
 const Resources = () => {
   return (
     <section className="bg-gradient-to-r from-blue-200 to-blue-100 p-8 min-h-screen flex flex-col items-center animate-fadeIn">
-      <h2 className="text-4xl mt-32 font-bold mb-8 text-blue-800 text-center animate-fadeIn lg:text-5xl">
+      <h2 className="text-4xl mt-28 font-bold mb-8 text-blue-800 text-center animate-fadeIn lg:text-5xl">
         Patient Resources
       </h2>
       <p className="text-xl mb-10 text-gray-700 text-center max-w-2xl animate-fadeIn">
