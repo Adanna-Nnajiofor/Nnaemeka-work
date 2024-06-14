@@ -14,6 +14,8 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import RootPage from "./pages/RootPage";
 import NotFound from "./pages/NotFound";
+import Faqs from "./pages/Faqs";
+import FormsAndPolicies from "./pages/FormsAndPolicies";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="faqs" element={<Faqs />} />
+            <Route path="forms-and-policies" element={<FormsAndPolicies />} />
           </Route>
         </Routes>
       </div>

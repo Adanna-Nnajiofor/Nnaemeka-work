@@ -15,7 +15,12 @@ const Resources = () => {
         articles, FAQs, and downloadable forms to prepare for your visits.
       </p>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
-        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp">
+        <div
+          className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp cursor-pointer"
+          onClick={() =>
+            window.open("https://askdrpeter.medium.com/", "_blank")
+          }
+        >
           <img
             src={articlesImage}
             alt="Educational Materials"
@@ -27,7 +32,10 @@ const Resources = () => {
             care, and wellness tips.
           </p>
         </div>
-        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp">
+        <Link
+          to="/faqs"
+          className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp cursor-pointer"
+        >
           <img
             src={faqsImage}
             alt="FAQs"
@@ -38,8 +46,11 @@ const Resources = () => {
             Answers to frequently asked questions about services, procedures,
             and general health inquiries.
           </p>
-        </div>
-        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp">
+        </Link>
+        <Link
+          to="/forms-and-policies"
+          className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center animate-fadeInUp cursor-pointer"
+        >
           <img
             src={formsImage}
             alt="Forms and Policies"
@@ -49,7 +60,7 @@ const Resources = () => {
           <p className="text-gray-600 text-center mb-4">
             Downloadable patient forms, privacy policies, and terms of service.
           </p>
-        </div>
+        </Link>
       </div>
       <Link to="/contact">
         <button className="mt-10 bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 animate-bounce">

@@ -1,6 +1,7 @@
 import React from "react";
 import clinicImg from "../assets/images/placeholder image.png"; // Placeholder image for clinic
 import bgImg from "../assets/images/appointment bg.jpg"; // Background image
+import { Link } from "react-router-dom";
 
 const Appointment = () => {
   return (
@@ -9,21 +10,19 @@ const Appointment = () => {
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="bg-blue-100 bg-opacity-90 p-8 items-center rounded-lg shadow-lg w-full max-w-4xl animate-fadeInUp mt-32 mb-14 ">
-        <h2 className="text-4xl font-bold mb-8 text-blue-800 text-center lg:text-5xl animate-slideInLeft">
+        <h2 className="text-4xl font-bold mb-8 mt-6 text-blue-800 text-center lg:text-5xl animate-slideInLeft">
           Appointment Booking
         </h2>
         <p className="text-xl mb-8 text-gray-700 text-center animate-fadeInUp">
           Schedule your appointment with ease using our online booking system.
         </p>
         <div className="text-center mb-8 animate-bounce">
-          <a
-            href="https://askdrpeter.medium.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/forms-and-policies"
             className="bg-blue-600 text-white px-8 py-3 rounded-md inline-block hover:bg-blue-700 transition duration-300"
           >
             Book an Appointment
-          </a>
+          </Link>
         </div>
         <div className="mb-8 animate-fadeInUp">
           <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
