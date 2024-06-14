@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styles.css */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-marquee h6 {
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+}
+
+
+
+/* .changing-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+  font-size: clamp(100%, 10vw, 100%);
+}
+
+.changing-text::before {
+  content: "DOCTOR | WRITER";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  color: rgb(201, 243, 29);
+  -webkit-text-stroke: 1px #c9f31d;
+  font-size: clamp(100%, 5vw, 80px);
+  overflow: hidden;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      width: 0;
+  }
+
+  90% {
+      width: 100%;
+  }
+} */
